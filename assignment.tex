@@ -1,0 +1,161 @@
+%=============================================================================================================
+\documentclass{assignment}
+\coursetitle{Introduction to Cryptography}
+\courselabel{CPSC 418}
+\exercisesheet{Home Work \#1}{}
+\student{Chris Wozniak - 10109820}
+\semester{Fall 2015}
+
+%\usepackage[pdftex]{graphicx}
+%\usepackage{subfigure}
+\usepackage{multicol}
+
+%=============================================================================================================
+\begin{document}
+
+	\begin{center}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{|c|c|c|} \hline
+			Problem & Marks \\ \hline \hline
+			1 & 	\\ \hline
+			2 & 	\\ \hline
+			3 & 	\\ \hline
+			4 & 	\\ \hline
+			5 & 	\\ \hline
+			6 & 	\\ \hline
+			7 & 	\\ \hline \hline
+			Total & \\ \hline
+		\end{tabular}
+	\end{center}
+	\newpage
+%=============================================================================================================
+	\begin{problemlist}
+		\pbitem Substitution
+		\begin{problem}
+			\textbf{Compute the plaintext from the provided ciphertext. Code created 
+			for solution attached to assignment.}
+			\begin{answer}\
+				\begin{enumerate}
+					\item \underline{Letter Frequency Analysis:} 
+					\begin{multicols}{3}
+						\begin{itemize} %[font=\consolas]
+						%\begin{verb}
+							\item[]( X $|$ 136) 
+							\item[]( O $|$ 85 ) 
+							\item[]( J $|$ 72 ) 	 
+							\item[]( R $|$ 59 )
+							\item[]( P $|$ 57 ) 	 
+							\item[]( T $|$ 57 )
+							\item[]( U $|$ 57 ) 	 
+							\item[]( I $|$ 56 )
+							\item[]( C $|$ 47 ) 	 
+							\item[]( A $|$ 46 )
+							\item[]( F $|$ 31 ) 	 
+							\item[]( N $|$ 31 )
+							\item[]( K $|$ 29 ) 	 
+							\item[]( E $|$ 27 )
+							\item[]( Z $|$ 24 ) 	 	 
+							\item[]( D $|$ 20 ) 
+							\item[]( L $|$ 19 ) 	 
+							\item[]( Q $|$ 17 )
+							\item[]( S $|$ 16 ) 	 
+							\item[]( G $|$ 14 )
+							\item[]( V $|$  9 ) 	 
+							\item[]( M $|$  8 )
+							\item[]( H $|$  5 ) 	 
+							\item[]( B $|$  3 )
+							\item[]( Y $|$  3 ) 	 
+							\item[]( W $|$  2 )
+						%\end{verb}
+						\end{itemize}
+					\end{multicols}
+					
+					\item \underline{Decrypted plaintext:}
+	
+					\par Case was twenty-four. At twenty-two he'd been a cowboy, a rustler, one of 
+					the best in the sprawl. He'd been trained by the best, by McCoy Pauley and Bobby Quine, 
+					legends in the biz. He'd operated on an almost permanent adrenaline high, a by-product 
+					of youth and proficiency. Jacked into a custom cyberspace deck hat, projected his 
+					disembodied consciousness into the consensual hallucination that was the matrix. A thief, 
+					he'd worked for other wealthier thieves. Employers who provided the exotic software 
+					required to penetrate the bright walls of corporate systems, opening windows into rich 
+					fields of data.\\
+	
+					\par He'd made the classic mistake, the one he'd sworn he'd never make: he stole from 
+					his employers. He kept something for himself and tried to move it through a fence in 
+					amsterdam. He still wasn't sure how he'd been discovered, not that it mattered. Now he'd 
+					expected to die then but they only smiled, of course he was welcome. They told him welcome 
+					to the money and he was going to need it, because still smiling they were going to make 
+					sure he never worked again.\\
+	
+					\par They damaged his nervous system with a wartime "Russian Mycotoxin" \\
+					
+					\item \underline{Who originally wrote the plaintext?} (Bonus)
+					\begin{center}
+						\par William Gibson, Neuromancer
+					\end{center}
+				\end{enumerate}
+			\end{answer}
+		\end{problem}
+		\newpage
+%=============================================================================================================	
+		\pbitem Compound Cipher Theory
+		\begin{problem}
+			The shift cipher.
+			\begin{answer}
+				\begin{enumerate}
+					\item  Give a formal proof that multiple shifts results in a shift cipher.
+						\begin{enumerate}
+							\item \underline{eK1 + ek2 = ek1+k2}
+							\item \underline{multiple enumeration}
+						\end{enumerate}
+					\item Multiple encryption
+						\begin{enumerate}
+							\item \underline{Vigenere key pairs}
+							\item \underline{Vigenere double encryption}
+						\end{enumerate}
+				\end{enumerate}
+			\end{answer}
+		\end{problem}
+		\newpage
+%=============================================================================================================	
+		\pbitem Entropy
+		\begin{problem}
+			\begin{answer}
+				\begin{enumerate}
+					\item \underline{Entropy}
+					\item \underline{Maximal}
+					\item \underline{Maximal Value of H(x)}
+				\end{enumerate}
+			\end{answer}
+		\end{problem}
+		\newpage
+%=============================================================================================================	
+		\pbitem Password lengths
+		\begin{problem}
+			\begin{answer}
+				\begin{enumerate}
+					\item \underline{Total number of ASCII encodings}
+					\item \underline{Unusable ascii codes}
+						\begin{enumerate}
+							\item \underline{key space sizes}
+							\item \underline{percentage of ascii codes are permissible}
+						\end{enumerate}
+					\item \underline{Entropy of keyspace}
+					\item \underline{Entropy of restricted keyspace}
+					\item \underline{Entropy 128}
+						\begin{enumerate}
+							\item \underline{all ascii chars}
+							\item \underline{ascii lower case restricted}
+						\end{enumerate}
+				\end{enumerate}
+			\end{answer}
+		\end{problem}
+		\newpage
+%=============================================================================================================	
+
+%=============================================================================================================	
+
+%=============================================================================================================	
+	\end{problemlist}
+\end{document}
